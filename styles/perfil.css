@@ -1,0 +1,57 @@
+.perfil {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfil-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 30px;
+}
+
+.perfil-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.perfil-infos div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 900px) {
+    .perfil {
+        flex-direction: column;
+    }
+
+    .perfil-container {
+        width: 100%;
+    }
+
+    .perfil-infos {
+        margin-top: 1em;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .perfil-container {
+        flex-direction: column;
+    }
+
+    .perfil-infos {
+        margin-top: 2em;
+
+    }
+
+    .perfil-infos div {
+        flex-direction: column;
+    }
+}

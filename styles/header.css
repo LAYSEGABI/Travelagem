@@ -1,0 +1,45 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.logo p {
+    color: var(--lg-cor-destaque);
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--lg-text-color-primary);
+}
+
+.foto-perfil-nav {
+    width: 50px;
+}
+
+@media (max-width:500px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+}
